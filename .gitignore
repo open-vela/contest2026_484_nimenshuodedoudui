@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.o
+*.d
+*.built
+*.depend
+*.kconfig
+*.save
+*.before_*
+.DS_Store
+Thumbs.db
+camera_config.json

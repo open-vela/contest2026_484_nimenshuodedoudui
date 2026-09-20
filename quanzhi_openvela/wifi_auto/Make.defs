@@ -1,0 +1,3 @@
+ifneq ($(CONFIG_EXAMPLES_WIFI_AUTO),)
+CONFIGURED_APPS += $(APPDIR)/examples/wifi_auto
+endif

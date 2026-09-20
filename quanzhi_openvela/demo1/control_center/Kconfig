@@ -1,0 +1,29 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config EXAMPLES_CONTROL_CENTER
+	tristate "control center for xiaozhi"
+	default n
+	---help---
+		Enable the control_center example
+
+if EXAMPLES_CONTROL_CENTER
+
+config EXAMPLES_CONTROL_CENTER_PROGNAME
+	string "Program name"
+	default "control_center"
+	---help---
+		This is the name of the program that will be used when the NSH ELF
+		program is installed.
+
+config EXAMPLES_CONTROL_CENTER_PRIORITY
+	int "control_center task priority"
+	default 100
+
+config EXAMPLES_CONTROL_CENTER_STACKSIZE
+	int "control_center stack size"
+	default 204800
+
+endif
