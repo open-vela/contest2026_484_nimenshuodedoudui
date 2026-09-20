@@ -1,0 +1,19 @@
+config EXAMPLES_SOUND_APP
+    bool "sound app for Xiaozhi STT"
+    default n
+
+if EXAMPLES_SOUND_APP
+
+config EXAMPLES_SOUND_APP_PROGNAME
+    string "Program name"
+    default "sound_app"
+
+config EXAMPLES_SOUND_APP_PRIORITY
+    int "Task priority"
+    default 100
+
+config EXAMPLES_SOUND_APP_STACKSIZE
+    int "Stack size"
+    default 32768
+
+endif

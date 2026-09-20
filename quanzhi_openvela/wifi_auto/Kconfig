@@ -1,0 +1,5 @@
+config EXAMPLES_WIFI_AUTO
+	tristate "WiFi auto connect app"
+	default n
+	---help---
+		Automatically connect wlan0 to the configured Wi-Fi hotspot.

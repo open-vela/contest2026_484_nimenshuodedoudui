@@ -1,0 +1,3 @@
+ifneq ($(CONFIG_DEMO1_EXPRESS_UI),)
+CONFIGURED_APPS += $(APPDIR)/demo1/express_ui
+endif

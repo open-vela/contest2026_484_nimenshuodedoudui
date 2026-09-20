@@ -1,0 +1,24 @@
+menuconfig DEMO1_EXPRESS_UI
+	tristate "Express sorting terminal UI"
+	default n
+	depends on GRAPHICS_LVGL
+	help
+		Smart express sorting terminal user interface.
+
+if DEMO1_EXPRESS_UI
+
+config DEMO1_EXPRESS_UI_PRIORITY
+	int "Express UI task priority"
+	default 100
+
+config DEMO1_EXPRESS_UI_STACKSIZE
+	int "Express UI stack size"
+	default 40960
+
+config DEMO1_EXPRESS_UI_INPUT_DEVPATH
+	string "Touchscreen device path"
+	default "/dev/input0"
+	depends on INPUT_TOUCHSCREEN
+	help
+		The path to the touchscreen device.
+endif
